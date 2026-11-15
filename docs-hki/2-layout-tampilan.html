@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><title>Layout Tampilan — Lif Intervensi</title><style>
+@page{size:A4;margin:18mm 16mm 18mm 16mm}
+*{box-sizing:border-box}
+body{font-family:"Inter","Noto Sans","DejaVu Sans",Arial,sans-serif;color:#1a2530;font-size:10.5pt;line-height:1.55;margin:0}
+h1{font-size:20pt;margin:0 0 6pt;color:#0b3550;letter-spacing:-.01em}
+h2{font-size:14pt;margin:18pt 0 6pt;color:#0b3550;border-bottom:1.5pt solid #4aa8e0;padding-bottom:3pt}
+h3{font-size:11.5pt;margin:12pt 0 4pt;color:#0b3550}
+p{margin:0 0 7pt}
+.cover{height:255mm;display:flex;flex-direction:column;justify-content:center;page-break-after:always}
+.cover .kicker{font:600 10pt "DejaVu Sans Mono",monospace;letter-spacing:.12em;color:#4aa8e0;text-transform:uppercase;margin-bottom:10pt}
+.cover h1{font-size:26pt;line-height:1.2}
+.cover .sub{font-size:13pt;color:#4a5b6a;margin-bottom:28pt}
+table.meta{border-collapse:collapse;width:100%;font-size:10.5pt}
+table.meta td{padding:6pt 8pt;border-bottom:.6pt solid #d5dee6;vertical-align:top}
+table.meta td:first-child{width:38%;color:#4a5b6a}
+table.grid{border-collapse:collapse;width:100%;font-size:9.5pt;margin:6pt 0 10pt}
+table.grid th,table.grid td{border:.6pt solid #c9d4dd;padding:4pt 6pt;text-align:left;vertical-align:top}
+table.grid th{background:#eaf3fa}
+.note{background:#f3f7fa;border-left:3pt solid #4aa8e0;padding:7pt 10pt;font-size:9.5pt;margin:8pt 0}
+figure{margin:6pt 0 10pt;page-break-inside:avoid}
+figure img{width:100%;border:.6pt solid #c9d4dd;border-radius:4pt;display:block}
+figcaption{font-size:9pt;color:#4a5b6a;margin-top:4pt}
+.row3{display:flex;gap:8pt}.row3 figure{flex:1}
+.page{page-break-before:always}
+ol,ul{margin:0 0 8pt;padding-left:18pt}li{margin:0 0 3pt}
+kbd{font:600 8.5pt "DejaVu Sans Mono",monospace;border:.6pt solid #9fb0bf;border-radius:3pt;padding:0 3pt;background:#f6f8fa}
+table.code{border-collapse:collapse;width:100%;font:6.6pt/1.32 "DejaVu Sans Mono","Liberation Mono",monospace}
+table.code td{vertical-align:top;padding:0}
+table.code td.n{width:30pt;color:#8a99a6;text-align:right;padding-right:6pt;border-right:.5pt solid #d5dee6;user-select:none}
+table.code td.c{padding-left:6pt;white-space:pre-wrap;word-break:break-all}
+</style></head><body><section class="cover"><div class="kicker">Lampiran 2 · Permohonan Pencatatan Hak Cipta</div><h1>Tata Letak Tampilan (Layout)</h1><div class="sub">Lif Intervensi — Atlas Injeksi Nyeri Dipandu USG</div><table class="meta">
+<tr><td>Judul ciptaan</td><td><b>Lif Intervensi — Atlas Injeksi Nyeri Dipandu USG</b></td></tr>
+<tr><td>Jenis ciptaan</td><td>Program Komputer</td></tr>
+<tr><td>Lampiran</td><td>Tata Letak Tampilan (Layout)</td></tr>
+<tr><td>Pencipta</td><td>[Nama Pencipta]</td></tr>
+<tr><td>Pemegang hak cipta</td><td>[Nama Pemegang Hak Cipta]</td></tr>
+<tr><td>Tanggal &amp; tempat pertama kali diumumkan</td><td>[Tanggal], [Kota]</td></tr>
+<tr><td>Bentuk program</td><td>Aplikasi web satu halaman (single-page web application) dalam satu berkas <code>index.html</code>; berjalan di peramban (browser) desktop maupun ponsel tanpa instalasi</td></tr>
+<tr><td>Bahasa pemrograman</td><td>HTML5, CSS3, JavaScript (ECMAScript 2020), SVG, WebGL melalui pustaka three.js</td></tr>
+</table></section>
+<h2>Gambaran umum desain</h2>
+<p>Lif Intervensi memakai tema gelap agar gambar USG dan model 3D tampak kontras, seperti layar mesin USG. Tata letak terdiri atas tiga tampilan utama: <b>Beranda</b> (model tubuh 3D), <b>Panel Region</b> (daftar prosedur per bagian tubuh) dan <b>Halaman Prosedur</b> (panduan lima langkah). Tampilan menyesuaikan diri untuk layar desktop dan ponsel.</p>
+<table class="grid"><tr><th>Unsur</th><th>Spesifikasi</th></tr>
+<tr><td>Warna dasar</td><td>Biru gelap #071520 (latar), #0F2231 (panel), garis #1E394B</td></tr>
+<tr><td>Warna aksen</td><td>Biru #4AA8E0 (tombol aktif, tautan); kuning #E6C04A (saraf); merah #F2938C (target); hijau #6EDE8A (status siap)</td></tr>
+<tr><td>Huruf</td><td>Inter (teks), IBM Plex Mono (label teknis, nomor langkah); fallback huruf Cina sistem</td></tr>
+<tr><td>Sudut &amp; bayangan</td><td>Kartu dan panel membulat 14 px; tombol ikon 36 × 36 px membulat 10 px</td></tr>
+<tr><td>Topbar (semua tampilan)</td><td>Tinggi 56 px: tombol kembali (muncul bila perlu), logo, breadcrumb, kotak pencarian, pemilih bahasa (ID/EN/中文/UZ), tombol layar penuh</td></tr>
+</table>
+<h2 class="page">1. Beranda</h2><figure><img src="img/01-beranda.jpg"><figcaption>Gambar 1. Beranda (desktop 1280 × 800).</figcaption></figure>
+<ol><li><b>Topbar</b>: logo Lif Intervensi, breadcrumb “Tubuh”, kotak pencarian, pemilih bahasa dan tombol layar penuh.</li>
+<li><b>Judul dan pengantar</b> di kiri atas: “Mulai dari tubuh.” beserta penjelasan singkat.</li>
+<li><b>Model tubuh 3D</b> di tengah layar yang dapat diputar dengan menggeser.</li>
+<li><b>13 titik region</b> berlabel (Leher, Bahu, Lengan atas, Batang tubuh, Siku, Lumbal, Gluteal &amp; pelvis, Tangan &amp; pergelangan, Hip, Paha, Lutut, Tungkai bawah &amp; kaki, Ankle &amp; kaki) yang mengikuti posisi model.</li>
+<li><b>Petunjuk</b> “geser untuk memutar” di kiri bawah dan kredit model 3D di kanan bawah.</li></ol>
+<h2 class="page">2. Panel region</h2><figure><img src="img/03-region.jpg"><figcaption>Gambar 2. Region Lumbal terbuka.</figcaption></figure>
+<ol><li>Kamera mendekat ke region terpilih; model menampilkan kerangka dan saraf, titik region lain diredupkan.</li>
+<li><b>Panel samping kanan</b>: status (Aktif · 8/8 siap), nama region, tombol tutup (✕).</li>
+<li><b>Kartu topik</b>: thumbnail sonogram skematik, nama prosedur, ringkasan pendekatan, lencana “SIAP”.</li>
+<li>Tombol <b>kembali</b> muncul di kiri topbar; breadcrumb menjadi “Tubuh / Lumbal”.</li></ol>
+<h2 class="page">3. Pencarian</h2><figure><img src="img/04-cari.jpg"><figcaption>Gambar 3. Hasil pencarian “facet”.</figcaption></figure>
+<p>Kotak pencarian di topbar menampilkan daftar hasil di bawahnya (maksimal 8). Setiap hasil memuat nama prosedur, region dan ringkasan pendekatan.</p>
+<h2 class="page">4. Halaman prosedur — Langkah 1: Pasien</h2><figure><img src="img/05-step1-pasien.jpg"><figcaption>Gambar 4. Langkah 1 “Pasien” pada prosedur Medial Branch Block L1–L4.</figcaption></figure>
+<ol><li><b>Judul prosedur</b> di kiri atas; <b>stepper lima langkah</b> (Pasien, Probe &amp; level, Sonoanatomi, Jarum, Detail) di kanan atas.</li>
+<li><b>Panel 3D kiri</b>: posisi pasien (mis. prone) dengan legenda warna struktur di bawahnya.</li>
+<li><b>Panel kanan</b>: tabel persiapan (posisi, probe, jarum, operator, contoh kasus) dan, pada prosedur tertentu, penampil 3D mini persarafan sendi dengan pemilih level.</li>
+<li><b>Kaki halaman</b>: tombol “← Kembali”, keterangan langkah aktif, tombol “Lanjut →”.</li></ol>
+<h2 class="page">5. Langkah 2: Probe &amp; level</h2><figure><img src="img/06-step2-probe.jpg"><figcaption>Gambar 5. Langkah 2 — probe dan bidang USG tampil pada model 3D.</figcaption></figure>
+<p>Panel kanan terbagi dua: <b>Skematik</b> (sonogram buatan berlabel) dan <b>Gambar USG asli</b> (titik merah = target). Pada model 3D tampil probe dan bidang pindai berwarna biru.</p>
+<h2 class="page">6. Langkah 3: Sonoanatomi</h2><figure><img src="img/07-step3-sono.jpg"><figcaption>Gambar 6. Langkah 3 — sonoanatomi dengan label struktur.</figcaption></figure>
+<p>Label struktur (kulit, fascia, otot, prosesus, target) tampil di atas sonogram skematik. Di bawahnya terdapat tombol pemilih bidang (Transversal / Sagital paramedian), tombol <kbd>L</kbd> Label, dan petunjuk “Ketuk struktur di gambar untuk namanya”.</p>
+<figure style="width:80%"><img src="img/14-label-off.jpg"><figcaption>Gambar 7. Label dimatikan — sonogram tampil bersih.</figcaption></figure>
+<h2 class="page">7. Langkah 4: Jarum</h2><figure><img src="img/09-step4-jarum.jpg"><figcaption>Gambar 8. Langkah 4 — animasi jarum in-plane menuju target.</figcaption></figure>
+<p>Jarum dianimasikan pada sonogram skematik dan model 3D. Tombol <kbd>N</kbd> “Ulangi” memutar ulang animasi.</p>
+<h2 class="page">8. Langkah 5: Detail</h2><figure><img src="img/10-step5-detail.jpg"><figcaption>Gambar 9. Langkah 5 — ringkasan untuk residen.</figcaption></figure>
+<p>Panel kanan memuat ringkasan prosedur: indikasi, anatomi kunci, kontraindikasi, alat &amp; obat, serta urutan langkah. Tombol “Lanjut” nonaktif karena ini langkah terakhir.</p>
+<h2 class="page">9. Pilihan bahasa</h2><figure style="width:86%"><img src="img/11-bahasa-en.jpg"><figcaption>Gambar 10. Bahasa Inggris (EN).</figcaption></figure><figure style="width:86%"><img src="img/12-bahasa-zh.jpg"><figcaption>Gambar 11. Bahasa Cina (中文).</figcaption></figure>
+<figure style="width:86%"><img src="img/13-bahasa-uz.jpg"><figcaption>Gambar 12. Bahasa Uzbek (UZ).</figcaption></figure>
+<p>Seluruh teks antarmuka, nama prosedur, label sonogram dan isi langkah mengikuti bahasa yang dipilih pada pemilih bahasa di topbar.</p>
+<h2 class="page">10. Tampilan ponsel</h2>
+<div class="row3"><figure><img src="img/15-hp-beranda.jpg"><figcaption>Gambar 13. Beranda.</figcaption></figure><figure><img src="img/16-hp-region.jpg"><figcaption>Gambar 14. Panel region.</figcaption></figure><figure><img src="img/17-hp-prosedur.jpg"><figcaption>Gambar 15. Halaman prosedur.</figcaption></figure></div>
+<p>Pada layar sempit (≤ 860 px) kotak pencarian disembunyikan, panel region muncul dari bawah layar, dan halaman prosedur disusun satu kolom yang dapat digulir dengan kaki halaman (Kembali / Lanjut) tetap di bawah.</p>
+</body></html>

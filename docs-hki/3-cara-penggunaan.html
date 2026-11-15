@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><title>Cara Penggunaan — Lif Intervensi</title><style>
+@page{size:A4;margin:18mm 16mm 18mm 16mm}
+*{box-sizing:border-box}
+body{font-family:"Inter","Noto Sans","DejaVu Sans",Arial,sans-serif;color:#1a2530;font-size:10.5pt;line-height:1.55;margin:0}
+h1{font-size:20pt;margin:0 0 6pt;color:#0b3550;letter-spacing:-.01em}
+h2{font-size:14pt;margin:18pt 0 6pt;color:#0b3550;border-bottom:1.5pt solid #4aa8e0;padding-bottom:3pt}
+h3{font-size:11.5pt;margin:12pt 0 4pt;color:#0b3550}
+p{margin:0 0 7pt}
+.cover{height:255mm;display:flex;flex-direction:column;justify-content:center;page-break-after:always}
+.cover .kicker{font:600 10pt "DejaVu Sans Mono",monospace;letter-spacing:.12em;color:#4aa8e0;text-transform:uppercase;margin-bottom:10pt}
+.cover h1{font-size:26pt;line-height:1.2}
+.cover .sub{font-size:13pt;color:#4a5b6a;margin-bottom:28pt}
+table.meta{border-collapse:collapse;width:100%;font-size:10.5pt}
+table.meta td{padding:6pt 8pt;border-bottom:.6pt solid #d5dee6;vertical-align:top}
+table.meta td:first-child{width:38%;color:#4a5b6a}
+table.grid{border-collapse:collapse;width:100%;font-size:9.5pt;margin:6pt 0 10pt}
+table.grid th,table.grid td{border:.6pt solid #c9d4dd;padding:4pt 6pt;text-align:left;vertical-align:top}
+table.grid th{background:#eaf3fa}
+.note{background:#f3f7fa;border-left:3pt solid #4aa8e0;padding:7pt 10pt;font-size:9.5pt;margin:8pt 0}
+figure{margin:6pt 0 10pt;page-break-inside:avoid}
+figure img{width:100%;border:.6pt solid #c9d4dd;border-radius:4pt;display:block}
+figcaption{font-size:9pt;color:#4a5b6a;margin-top:4pt}
+.row3{display:flex;gap:8pt}.row3 figure{flex:1}
+.page{page-break-before:always}
+ol,ul{margin:0 0 8pt;padding-left:18pt}li{margin:0 0 3pt}
+kbd{font:600 8.5pt "DejaVu Sans Mono",monospace;border:.6pt solid #9fb0bf;border-radius:3pt;padding:0 3pt;background:#f6f8fa}
+table.code{border-collapse:collapse;width:100%;font:6.6pt/1.32 "DejaVu Sans Mono","Liberation Mono",monospace}
+table.code td{vertical-align:top;padding:0}
+table.code td.n{width:30pt;color:#8a99a6;text-align:right;padding-right:6pt;border-right:.5pt solid #d5dee6;user-select:none}
+table.code td.c{padding-left:6pt;white-space:pre-wrap;word-break:break-all}
+</style></head><body><section class="cover"><div class="kicker">Lampiran 3 · Permohonan Pencatatan Hak Cipta</div><h1>Cara Penggunaan (Panduan Pengguna)</h1><div class="sub">Lif Intervensi — Atlas Injeksi Nyeri Dipandu USG</div><table class="meta">
+<tr><td>Judul ciptaan</td><td><b>Lif Intervensi — Atlas Injeksi Nyeri Dipandu USG</b></td></tr>
+<tr><td>Jenis ciptaan</td><td>Program Komputer</td></tr>
+<tr><td>Lampiran</td><td>Cara Penggunaan (Panduan Pengguna)</td></tr>
+<tr><td>Pencipta</td><td>[Nama Pencipta]</td></tr>
+<tr><td>Pemegang hak cipta</td><td>[Nama Pemegang Hak Cipta]</td></tr>
+<tr><td>Tanggal &amp; tempat pertama kali diumumkan</td><td>[Tanggal], [Kota]</td></tr>
+<tr><td>Bentuk program</td><td>Aplikasi web satu halaman (single-page web application) dalam satu berkas <code>index.html</code>; berjalan di peramban (browser) desktop maupun ponsel tanpa instalasi</td></tr>
+<tr><td>Bahasa pemrograman</td><td>HTML5, CSS3, JavaScript (ECMAScript 2020), SVG, WebGL melalui pustaka three.js</td></tr>
+</table></section>
+<h2>Tentang aplikasi</h2>
+<p>Lif Intervensi adalah atlas interaktif injeksi nyeri dan blok saraf yang dipandu ultrasonografi (USG). Pengguna memilih bagian tubuh pada model 3D, lalu mempelajari setiap prosedur melalui lima langkah: posisi pasien, penempatan probe, sonoanatomi, teknik jarum, dan ringkasan. Saat ini tersedia 13 region dengan 211 topik prosedur, dalam bahasa Indonesia, Inggris, Cina dan Uzbek.</p>
+<h3>Kebutuhan sistem</h3>
+<ul><li>Peramban modern dengan dukungan WebGL: Google Chrome, Microsoft Edge, Mozilla Firefox atau Safari versi terbaru.</li>
+<li>Komputer, tablet atau ponsel; tidak perlu instalasi maupun akun.</li>
+<li>Koneksi internet hanya diperlukan untuk membuka alamat website; setelah termuat, seluruh konten berjalan di perangkat.</li></ul>
+
+<h2 class="page">Langkah 1 — Membuka aplikasi</h2>
+<ol><li>Buka alamat website Lif Intervensi di peramban, atau buka berkas <code>index.html</code> secara langsung.</li>
+<li>Tunggu hingga model tubuh 3D tampil. Aplikasi terbuka di <b>Beranda</b>.</li></ol>
+<figure><img src="img/01-beranda.jpg"><figcaption>Beranda Lif Intervensi.</figcaption></figure>
+<h2 class="page">Langkah 2 — Memilih bahasa</h2>
+<ol><li>Klik pemilih bahasa di kanan atas (bertuliskan <b>ID</b>).</li>
+<li>Pilih <b>ID</b> (Indonesia), <b>EN</b> (Inggris), <b>中文</b> (Cina) atau <b>UZ</b> (Uzbek). Tampilan langsung berganti; pilihan diingat pada kunjungan berikutnya.</li></ol>
+<figure style="width:85%"><img src="img/12-bahasa-zh.jpg"><figcaption>Contoh tampilan setelah memilih 中文.</figcaption></figure>
+<h2 class="page">Langkah 3 — Menjelajah model tubuh</h2>
+<ol><li><b>Putar model</b>: tekan dan geser (klik-seret dengan mouse, atau usap dengan jari di layar sentuh).</li>
+<li>Perhatikan <b>titik biru berlabel</b> pada model; setiap titik mewakili satu region tubuh.</li></ol>
+<h2>Langkah 4 — Memilih region</h2>
+<ol><li>Klik salah satu titik region, misalnya <b>Lumbal</b>.</li>
+<li>Kamera mendekat ke region tersebut dan <b>panel region</b> terbuka di kanan (di ponsel: dari bawah).</li>
+<li>Panel menampilkan daftar topik prosedur. Gulir untuk melihat semua topik.</li>
+<li>Untuk menutup panel, klik ✕, tombol kembali ‹ di kiri atas, atau tekan <kbd>Esc</kbd>.</li></ol>
+<figure style="width:85%"><img src="img/03-region.jpg"><figcaption>Panel region Lumbal dengan daftar prosedur.</figcaption></figure>
+<h2 class="page">Langkah 5 — Mencari prosedur (opsional)</h2>
+<ol><li>Klik kotak <b>Cari prosedur atau struktur…</b> di topbar.</li>
+<li>Ketik nama prosedur atau struktur, misalnya “facet”, “Baker”, “femoral”.</li>
+<li>Klik salah satu hasil untuk langsung membuka prosedurnya. Tekan <kbd>Esc</kbd> untuk mengosongkan pencarian.</li></ol>
+<figure style="width:85%"><img src="img/04-cari.jpg"><figcaption>Hasil pencarian “facet”.</figcaption></figure>
+<h2 class="page">Langkah 6 — Membuka prosedur</h2>
+<p>Klik kartu prosedur pada panel region (atau hasil pencarian). Halaman prosedur terbuka di <b>Langkah 1: Pasien</b>.</p>
+<h3>Bagian halaman prosedur</h3>
+<ul><li><b>Stepper</b> di kanan atas: klik nomor langkah untuk langsung melompat.</li>
+<li><b>Panel 3D</b> di kiri: dapat diputar dengan menggeser.</li>
+<li><b>Panel konten</b> di kanan: berubah sesuai langkah.</li>
+<li><b>Kaki halaman</b>: tombol “← Kembali” dan “Lanjut →” untuk berpindah langkah.</li></ul>
+<h3>Langkah prosedur 1 — Pasien</h3>
+<p>Baca tabel persiapan: posisi pasien, jenis probe, jarum, posisi operator dan contoh kasus. Pada prosedur sendi facet tersedia penampil 3D mini; klik level sendi (L1–L2 … L5–S1) untuk melihat saraf yang mempersarafinya.</p>
+<figure style="width:85%"><img src="img/05-step1-pasien.jpg"><figcaption>Langkah 1 — Pasien.</figcaption></figure>
+<h3 class="page">Langkah prosedur 2 — Probe &amp; level</h3>
+<p>Klik <b>Lanjut</b>. Model 3D menunjukkan letak dan arah probe beserta bidang pindainya. Bandingkan sonogram <b>skematik</b> dengan <b>gambar USG asli</b>; titik merah menandai target.</p>
+<figure style="width:85%"><img src="img/06-step2-probe.jpg"><figcaption>Langkah 2 — Probe & level.</figcaption></figure>
+<h3>Langkah prosedur 3 — Sonoanatomi</h3>
+<ol><li>Pelajari label struktur pada sonogram skematik.</li>
+<li>Klik tombol bidang (mis. <b>Transversal</b> / <b>Sagital paramedian</b>) untuk berganti pandangan.</li>
+<li>Klik <b>Label</b> atau tekan <kbd>L</kbd> untuk menyembunyikan/menampilkan label — berguna untuk menguji diri.</li>
+<li>Ketuk atau klik sebuah struktur pada gambar untuk menampilkan namanya.</li></ol>
+<figure style="width:85%"><img src="img/07-step3-sono.jpg"><figcaption>Langkah 3 — Sonoanatomi.</figcaption></figure>
+<h3 class="page">Langkah prosedur 4 — Jarum</h3>
+<p>Animasi menunjukkan jalur jarum (in-plane atau out-of-plane) menuju target pada sonogram dan model 3D. Klik <b>Ulangi</b> atau tekan <kbd>N</kbd> untuk memutar ulang.</p>
+<figure style="width:85%"><img src="img/09-step4-jarum.jpg"><figcaption>Langkah 4 — Jarum.</figcaption></figure>
+<h3>Langkah prosedur 5 — Detail</h3>
+<p>Baca ringkasan: indikasi, anatomi kunci, kontraindikasi, alat &amp; obat dan urutan tindakan. Ini langkah terakhir; tombol Lanjut tidak aktif.</p>
+<figure style="width:85%"><img src="img/10-step5-detail.jpg"><figcaption>Langkah 5 — Detail.</figcaption></figure>
+<h2 class="page">Langkah 7 — Kembali dan berpindah prosedur</h2>
+<ul><li>Klik tombol <b>‹</b> di kiri atas atau tekan <kbd>Esc</kbd> untuk kembali satu tingkat: Prosedur → daftar region → Beranda.</li>
+<li>Tombol kembali pada peramban dan tombol kembali ponsel Android juga dapat dipakai.</li>
+<li>Klik breadcrumb (<b>Tubuh</b> / nama region) untuk melompat ke tingkat tersebut.</li>
+<li>Klik logo Lif Intervensi untuk kembali ke Beranda.</li></ul>
+<h2>Langkah 8 — Layar penuh</h2>
+<p>Klik ikon layar penuh di kanan atas atau tekan <kbd>F</kbd>. Tekan lagi (atau <kbd>Esc</kbd> peramban) untuk keluar.</p>
+<h2>Langkah 9 — Menyimpan dan membagikan tautan</h2>
+<p>Alamat di peramban berubah mengikuti halaman yang dibuka, misalnya <code>#/r/lumbal</code> (region) atau <code>#/p/mbb/3</code> (prosedur, langkah 3). Salin alamat tersebut untuk menandai atau membagikan halaman tertentu.</p>
+<h2>Langkah 10 — Menggunakan di ponsel</h2>
+<div class="row3"><figure><img src="img/15-hp-beranda.jpg"><figcaption>Beranda.</figcaption></figure><figure><img src="img/16-hp-region.jpg"><figcaption>Panel region.</figcaption></figure><figure><img src="img/17-hp-prosedur.jpg"><figcaption>Prosedur.</figcaption></figure></div>
+<p>Cara pakai sama dengan desktop: ketuk titik region, ketuk kartu prosedur, gulir halaman prosedur ke bawah, dan pakai tombol Kembali / Lanjut di bagian bawah layar.</p>
+<h2 class="page">Ringkasan pintasan keyboard</h2>
+<table class="grid"><tr><th>Tombol</th><th>Fungsi</th><th>Berlaku di</th></tr>
+<tr><td><kbd>→</kbd></td><td>Langkah berikutnya</td><td>Halaman prosedur</td></tr>
+<tr><td><kbd>←</kbd></td><td>Langkah sebelumnya</td><td>Halaman prosedur</td></tr>
+<tr><td><kbd>L</kbd></td><td>Tampilkan / sembunyikan label</td><td>Halaman prosedur</td></tr>
+<tr><td><kbd>N</kbd></td><td>Putar ulang animasi jarum</td><td>Halaman prosedur</td></tr>
+<tr><td><kbd>Esc</kbd></td><td>Kembali satu tingkat; mengosongkan pencarian</td><td>Semua</td></tr>
+<tr><td><kbd>F</kbd></td><td>Layar penuh</td><td>Semua</td></tr></table>
+<h2>Selesai</h2>
+<p>Untuk mengakhiri, cukup tutup tab atau jendela peramban. Aplikasi tidak menyimpan data pribadi; yang diingat hanya pilihan bahasa pada perangkat pengguna.</p>
+<div class="note">Lif Intervensi adalah materi edukasi bagi tenaga medis dan tidak menggantikan pelatihan klinis, supervisi, maupun pedoman institusi.</div>
+</body></html>
